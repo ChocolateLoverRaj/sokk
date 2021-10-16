@@ -1,5 +1,5 @@
 {
-  "name": "sokk",
+  "name": "@programmerraj/sokk",
   "version": "1.0.0",
   "description": "Round/ceil/float to any integer multiple",
   "keywords": [
@@ -8,7 +8,10 @@
     "ceil",
     "floor"
   ],
-  "repository": "github:aussiegeek/sokk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChocolateLoverRaj/sokk"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,12 +20,12 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "doc:dev": "yarn build && yarn api-extractor run --local --verbose && yarn api-documenter markdown --input-folder temp --output-folder markdown",
-    "doc:release": "yarn build && yarn api-extractor run --verbose && yarn api-documenter markdown --input-folder temp --output-folder markdown",
-    "lint": "yarn eslint src --ext .js,.jsx,.ts,.tsx --max-warnings=0 --fix",
-    "lint:check": "yarn eslint src --ext .js,.jsx,.ts,.tsx --max-warnings=0 --fix",
-    "prepare": "rm -rf dist && yarn build",
-    "release": "yarn prepare && changeset publish",
+    "doc:dev": "npm run build && npm run api-extractor run --local --verbose && npm run api-documenter markdown --input-folder temp --output-folder markdown",
+    "doc:release": "npm run build && npm run api-extractor run --verbose && npm run api-documenter markdown --input-folder temp --output-folder markdown",
+    "lint": "npm run eslint src --ext .js,.jsx,.ts,.tsx --max-warnings=0 --fix",
+    "lint:check": "npm run eslint src --ext .js,.jsx,.ts,.tsx --max-warnings=0 --fix",
+    "prepare": "rm -rf dist && npm run build",
+    "release": "npm run prepare && changeset publish",
     "test": "jest"
   },
   "husky": {

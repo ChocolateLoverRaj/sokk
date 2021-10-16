@@ -3,6 +3,8 @@
 !/.yarn/plugins
 !/.yarn/sdks
 
+pnpm-lock.yaml
+
 node_modules
 dist
 markdown
