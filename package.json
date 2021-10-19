@@ -38,9 +38,6 @@
     "*.{ts}": "eslint --fix",
     "package.json": "sort-package-json"
   },
-  "dependencies": {
-    "@yarnpkg/pnpify": "^2.1.0"
-  },
   "devDependencies": {
     "@aussiegeek/eslint-config-base": "0.1.0",
     "@changesets/cli": "^2.10.1",
