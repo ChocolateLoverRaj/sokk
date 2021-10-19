@@ -1,6 +1,6 @@
 {
   "name": "@programmerraj/sokk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Round/ceil/float to any integer multiple",
   "keywords": [
     "typescript",
